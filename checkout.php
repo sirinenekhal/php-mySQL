@@ -63,7 +63,8 @@ if(isset($_SESSION['id'])){
 	echo "<tr><td>Mobile Number: </td><td>".$row['CustomerPhone']."</td></tr>";
 	echo "<tr><td>Gender: </td><td>".$row['CustomerGender']."</td></tr>";
 	echo "<tr><td>Address: </td><td>".$row['CustomerAddress']."</td></tr>";
-	echo "<tr><td>Date: </td><td>".$row['DatePurchase']."</td></tr>";
+	echo "<tr><td>Date: </td><td>".$row['DatePurchase']."</td>
+	</tr>";
 	echo "</blockquote>";
 
 	$sql = "SELECT customer.CustomerName, customer.CustomerIC, customer.CustomerGender, customer.CustomerAddress, customer.CustomerEmail, customer.CustomerPhone, book.BookTitle, book.Price, book.Image, `order`.`DatePurchase`, `order`.`Quantity`, `order`.`TotalPrice`
